@@ -5,7 +5,7 @@ try
 {
 	double.Parse(userInput);
 }
-catch
+catch (Exception ex)
 {
-    Console.WriteLine("Er liep iets fout");
+    Console.WriteLine(ex.Message);
 }
